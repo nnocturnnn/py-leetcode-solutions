@@ -1,0 +1,1 @@
+<h1>2223 - The Number of Rich Customers</h1><h2>Difficulty: Easy - <a href="https://leetcode.com/problems/the-number-of-rich-customers/">the-number-of-rich-customers</a></h2>None
