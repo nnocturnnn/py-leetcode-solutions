@@ -1,6 +1,8 @@
 class Solution:
     def addDigits(self, num: int) -> int:
-        if num // 10 == 0:
-            return num
+        if num==0: 
+            return 0
+        if num%9==0:
+            return 9
         else:
-            return self.addDigits(sum([int(i) for i in str(num)]))
+            return (num%9)
