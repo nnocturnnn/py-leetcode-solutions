@@ -1,13 +1,9 @@
 class Solution:
     def judgeCircle(self, moves: str) -> bool:
-        coordinate = [0, 0]
-        for i in moves:
-            if i == "U":
-                coordinate[0] += 1
-            elif i == "D":
-                coordinate[0] -= 1
-            elif i == "L":
-                coordinate[1] -= 1
-            else:
-                coordinate[1] += 1
-        return coordinate == [0, 0]
+        coord = [0, 0]
+        directions = {"U": (1, 0), "D": (-1, 0), "L": (0, -1), "R": (0, 1)}
+        for m in moves:
+            dx, dy = directions[m]
+            coord[0] += dx
+            coord[1] += dy
+        return coord == [0, 0]
